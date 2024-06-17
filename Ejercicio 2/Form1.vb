@@ -1,5 +1,4 @@
 ﻿Public Class Form1
-    Dim palabra As String
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Tabla1.ColumnCount = 4
         Tabla1.Rows.Add(5)
@@ -37,6 +36,5 @@
         Next
         TextBox1.Text = suma
         TextBox2.Text = mayor
-
     End Sub
 End Class

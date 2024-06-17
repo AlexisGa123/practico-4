@@ -16,44 +16,31 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim vector(7), contraDiagonal(7), matrizNueva(3, 4), matriz(7, 7), a, b, c, contra, mayor As Integer
-        Dim value = a And b And c = 0
-        contra = 6
-        For alfa = 1 To 7
-            contraDiagonal(alfa) = Tabla1.Item(alfa - 1, contra).Value
-            contra -= 1
-        Next
-        For pi = 1 To 7
-            If contraDiagonal(pi) > mayor Then
-                mayor = contraDiagonal(pi)
-            End If
-        Next
+        Dim vector(7), matrizNueva(3, 4), matriz(7, 7), mayor As Integer
         For fil = 1 To 7
             For col = 1 To 7
                 matriz(fil, col) = Tabla1.Item(col - 1, fil - 1).Value
             Next
         Next
+        For pi = 1 To 7
+            If matriz(8 - pi, pi) > mayor Then
+                mayor = matriz(8 - pi, pi)
+            End If
+        Next
         For beta = 1 To 4
-            vector(beta) = Tabla1.Item(3 + b, 0 + c).Value
-            b += 1
-            c += 1
+            vector(beta) = matriz(beta, 3 + beta)
         Next
-        b = 0
-        c = 0
         For bi = 1 To 3
-            vector(4 + bi) = Tabla1.Item(0 + b, 4 + c).Value
-            b += 1
-            c += 1
+            vector(4 + bi) = matriz(4 + bi, bi)
         Next
-        For algo = 1 To 7
-            Tabla2.Item(algo - 1, 0).Value = vector(algo)
+        For col = 1 To 7
+            Tabla2.Item(col - 1, 0).Value = vector(col)
         Next
         For fi = 1 To 3
             For colu = 1 To 4
-                matrizNueva(fi, colu) = matriz(2 + fi, 1 + colu + a)
+                matrizNueva(fi, colu) = matriz(2 + fi, colu + fi)
                 Tabla3.Item(colu - 1, fi - 1).Value = matrizNueva(fi, colu)
             Next
-            a += 1
         Next
         TextBox1.Text = mayor
     End Sub

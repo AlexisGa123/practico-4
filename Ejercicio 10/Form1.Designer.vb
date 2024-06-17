@@ -42,13 +42,12 @@ Partial Class Form1
         Me.Tabla1.AllowUserToDeleteRows = False
         Me.Tabla1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Tabla1.ColumnHeadersVisible = False
-        Me.Tabla1.Location = New System.Drawing.Point(14, 53)
-        Me.Tabla1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Tabla1.Location = New System.Drawing.Point(12, 40)
         Me.Tabla1.Name = "Tabla1"
         Me.Tabla1.RowHeadersVisible = False
         Me.Tabla1.RowHeadersWidth = 51
         Me.Tabla1.RowTemplate.Height = 25
-        Me.Tabla1.Size = New System.Drawing.Size(325, 249)
+        Me.Tabla1.Size = New System.Drawing.Size(284, 187)
         Me.Tabla1.TabIndex = 3
         '
         'Tabla2
@@ -57,49 +56,47 @@ Partial Class Form1
         Me.Tabla2.AllowUserToDeleteRows = False
         Me.Tabla2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Tabla2.ColumnHeadersVisible = False
-        Me.Tabla2.Location = New System.Drawing.Point(14, 353)
-        Me.Tabla2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Tabla2.Location = New System.Drawing.Point(12, 265)
         Me.Tabla2.Name = "Tabla2"
         Me.Tabla2.ReadOnly = True
         Me.Tabla2.RowHeadersVisible = False
         Me.Tabla2.RowHeadersWidth = 51
         Me.Tabla2.RowTemplate.Height = 25
-        Me.Tabla2.Size = New System.Drawing.Size(325, 44)
+        Me.Tabla2.Size = New System.Drawing.Size(284, 33)
         Me.Tabla2.TabIndex = 10
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(14, 29)
+        Me.Label1.Location = New System.Drawing.Point(12, 22)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(151, 20)
+        Me.Label1.Size = New System.Drawing.Size(118, 15)
         Me.Label1.TabIndex = 13
         Me.Label1.Text = "Ingrese matriz de 7x7"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(14, 421)
+        Me.Label3.Location = New System.Drawing.Point(12, 316)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(99, 20)
+        Me.Label3.Size = New System.Drawing.Size(77, 15)
         Me.Label3.TabIndex = 15
         Me.Label3.Text = "Matriz de 3x4"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(14, 329)
+        Me.Label2.Location = New System.Drawing.Point(12, 247)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(84, 20)
+        Me.Label2.Size = New System.Drawing.Size(94, 15)
         Me.Label2.TabIndex = 16
-        Me.Label2.Text = "Vector de 5"
+        Me.Label2.Text = "Vector obtenido:"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(391, 291)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Button1.Location = New System.Drawing.Point(342, 218)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(106, 97)
+        Me.Button1.Size = New System.Drawing.Size(93, 73)
         Me.Button1.TabIndex = 17
         Me.Button1.Text = "Calcular"
         Me.Button1.UseVisualStyleBackColor = True
@@ -110,36 +107,36 @@ Partial Class Form1
         Me.Tabla3.AllowUserToDeleteRows = False
         Me.Tabla3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Tabla3.ColumnHeadersVisible = False
-        Me.Tabla3.Location = New System.Drawing.Point(14, 445)
-        Me.Tabla3.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Tabla3.Location = New System.Drawing.Point(12, 334)
         Me.Tabla3.Name = "Tabla3"
         Me.Tabla3.RowHeadersVisible = False
         Me.Tabla3.RowHeadersWidth = 51
         Me.Tabla3.RowTemplate.Height = 25
-        Me.Tabla3.Size = New System.Drawing.Size(189, 117)
+        Me.Tabla3.Size = New System.Drawing.Size(165, 88)
         Me.Tabla3.TabIndex = 18
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(256, 512)
+        Me.Label4.Location = New System.Drawing.Point(224, 384)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(212, 20)
+        Me.Label4.Size = New System.Drawing.Size(167, 15)
         Me.Label4.TabIndex = 19
         Me.Label4.Text = "El mayor de la contradiagonal:"
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(256, 535)
+        Me.TextBox1.Location = New System.Drawing.Point(224, 401)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(128, 27)
+        Me.TextBox1.Size = New System.Drawing.Size(112, 23)
         Me.TextBox1.TabIndex = 20
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(534, 600)
+        Me.ClientSize = New System.Drawing.Size(467, 450)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Tabla3)
@@ -149,7 +146,6 @@ Partial Class Form1
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Tabla2)
         Me.Controls.Add(Me.Tabla1)
-        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "Form1"
         Me.Text = "Form1"
         CType(Me.Tabla1, System.ComponentModel.ISupportInitialize).EndInit()

@@ -11,25 +11,29 @@
             Tabla2.Columns(i).Width = 40
         Next
     End Sub
-
-    Private Sub cmd_Click(sender As Object, e As EventArgs) Handles cmd.Click
-        Dim vector(10) As Integer
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim vector(10), num As Integer
         Dim mayor As Integer = 0
+        num = InputBox("numero a calcular")
         For fila = 1 To 10
-            vector(fila) = Tabla2.Item(fila - 1, 0).Value
-            If vector(fila) Mod (2) = 0 Then
-                ListBox2.Items.Add(vector(fila))
-            Else
-                ListBox1.Items.Add(vector(fila))
-            End If
-            If vector(fila) > mayor Then
-                mayor = vector(fila)
-                TextBox1.Text = vector(fila)
-                TextBox2.Text = fila
-            End If
-            Tabla3.Item(fila - 1, 0).Value = vector(fila)
-        Next
-        Tabla3.Item(9, 0).Value = vector(1)
-        Tabla3.Item(0, 0).Value = vector(10)
+                vector(fila) = Tabla2.Item(fila - 1, 0).Value
+                If vector(fila) Mod (2) = 0 Then
+                    ListBox2.Items.Add(vector(fila))
+                Else
+                    ListBox1.Items.Add(vector(fila))
+                End If
+                If vector(fila) > mayor Then
+                    mayor = vector(fila)
+                    TextBox1.Text = vector(fila)
+                    TextBox2.Text = fila
+                End If
+            Next
+            For a = 1 To 10
+                Tabla3.Item(a - 1, 0).Value = vector(11 - a)
+                If vector(a) Mod num = 0 Then
+                    ListBox3.Items.Add(vector(a))
+                End If
+            Next
+        Label7.Text = "Los multiplos de " & num & " son:"
     End Sub
 End Class
